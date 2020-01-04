@@ -1,0 +1,24 @@
+.gene-menu-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "select";
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #A8C3CA;
+}
+
+.select {
+    grid-area: select;
+    padding: 20px;
+}
+/* 
+.selectedGeneDensity {
+    padding: 20px;
+    grid-area: selectedGeneDensity;
+}
+
+.genesDensity {
+    padding: 20px;
+    grid-area: genesDensity;    
+} */

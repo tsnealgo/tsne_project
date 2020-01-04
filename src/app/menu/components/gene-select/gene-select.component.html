@@ -1,0 +1,29 @@
+<div class="example-select">
+    <label class = "title">Choose a gene</label>
+    <div class="example_select__item">
+        <ngx-select [formControl]="ngxControl"
+                    [allowClear]="true"
+                    [defaultValue]="doNgxDefault()"
+                    [items]="items"
+                    placeholder="No Gene selected"
+                    (typed)="inputTyped('ngx-select', $event)"
+                    (blur)="doBlur()"
+                    (open)="doOpen()"
+                    (close)="doClose()"
+                    (select)="doSelect($event)"
+                    (remove)="doRemove($event)"
+                    (selectionChanges)="doSelectOptions($event)"> 
+        </ngx-select>
+        <!-- <p></p>
+        <div class="alert alert-secondary">
+            <pre>{{ngxControl.value | json}}</pre>
+
+        </div> -->
+         <!-- <div>
+            <button type="button" class="btn btn-primary"
+                    (click)="ngxControl.disabled? ngxControl.enable(): ngxControl.disable()">
+                {{ngxControl.disabled ? 'Enable' : 'Disable'}}
+            </button>
+        </div>  -->
+    </div>
+</div>

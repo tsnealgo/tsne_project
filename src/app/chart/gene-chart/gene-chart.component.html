@@ -1,0 +1,14 @@
+<div class="chart-wrapper" *ngIf = "bubbleChartData">
+        <canvas baseChart
+        [datasets]="bubbleChartData"
+        [options]="bubbleChartOptions"
+        [legend]="bubbleChartLegend"
+        [colors]="bubbleChartColors"
+        [chartType]="bubbleChartType">
+      </canvas>
+</div>
+<div>
+  {{ selectedGene }}
+</div>
+
+

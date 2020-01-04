@@ -1,0 +1,23 @@
+:host {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "menu" "chart";
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #A8C3CA;
+    grid-area: menu;
+    padding: 10px;
+}
+
+.chart {
+    grid-area: chart;
+    padding: 20px;
+}
