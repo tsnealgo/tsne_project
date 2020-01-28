@@ -8,12 +8,14 @@ import { GeneMenuComponent } from './menu/components/gene-menu/gene-menu.compone
 import { GeneChartComponent } from './chart/gene-chart/gene-chart.component';
 import { ChartsModule } from 'ng2-charts';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     GeneSelectComponent,
     GeneMenuComponent,
     GeneChartComponent,
+
 
     
   ],
