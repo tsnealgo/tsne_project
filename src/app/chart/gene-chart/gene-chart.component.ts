@@ -1,11 +1,9 @@
-import { element } from 'protractor';
-
 import { DataService } from './../../data-service.service';
 import { Cell } from './cell.module';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets, ChartTooltipOptions, ChartData } from 'chart.js';
 import * as tSNE from '../../../assets/tSNE.json';
-import * as normalized from '../../../assets/1000Genes.json';
+import * as Genes from '../../../assets/2KGenes.json';
 
 @Component({
   selector: 'app-gene-chart',
@@ -16,21 +14,25 @@ import * as normalized from '../../../assets/1000Genes.json';
 export class GeneChartComponent implements OnInit {
 
   tSNE_data = tSNE.results;
-  genesVScells: any = (normalized as any).default.results;
+  genesVScells: any = (Genes as any).default.results;
+
   cells = [];
   dynamic_cells = [];
-  selectedGene: string = "none";
+  selectedGene: string = "none";s
   geneCells: any;
   
+
+  chart = null;
+
   constructor(private data: DataService, private ref: ChangeDetectorRef){}
 
   ngOnInit(): void {
+    console.log("XXX",  this.genesVScells);
     this.Initializing_tSNE();
     this.updateData(this.cells);
 
     //change in selectedGene
      this.data.currentSelectedGene.subscribe(selectedGene => {
-      let countIn = 0, countOut = 0, count = 0;
         this.selectedGene = selectedGene;  
         //return this.cells to the origin value
         this.Initializing_tSNE();
@@ -40,27 +42,10 @@ export class GeneChartComponent implements OnInit {
         this.geneCells = this.findGene(this.selectedGene);
         this.dynamic_cells.forEach(cell => {
           if(this.geneCells[0].hasOwnProperty(cell.cellName)){
-            //   if(this.geneCells[0][cell.cellName] != 0){
-            //   if(this.geneCells[0][cell.cellName] < 0.1)
-            //     cell.r = 3.2;
-            //   else if(this.geneCells[0][cell.cellName] < 0.2) 
-            //     cell.r = 3.9;
-            //   else if(this.geneCells[0][cell.cellName] < 0.3) 
-            //     cell.r = 4.5;
-            //   else if(this.geneCells[0][cell.cellName] < 0.4) 
-            //     cell.r = 5;
-            //   else if(this.geneCells[0][cell.cellName] < 0.7) 
-            //     cell.r = 5.7;
-            //   else if(this.geneCells[0][cell.cellName] < 1) 
-            //     cell.r = 6.5;
-            // }
-            // else{
-            //   cell.r = 0;
-            // }
-            cell.r = Number(this.geneCells[0][cell.cellName])*20;
+            cell.r = Number(this.geneCells[0][cell.cellName]);
           }
         });
-        this.bubbleChartData[0].backgroundColor = '#AA3939';
+        this.bubbleChartData[0].backgroundColor = '#306262';
         this.updateData(this.dynamic_cells);
       } 
       else {
@@ -96,86 +81,6 @@ export class GeneChartComponent implements OnInit {
   
   public bubbleChartOptions: ChartOptions = {
     responsive: true,
-    plugins: {
-      zoom: {
-        // Container for pan options
-        pan: {
-          // Boolean to enable panning
-          enabled: true,
-    
-          // Panning directions. Remove the appropriate direction to disable
-          // Eg. 'y' would only allow panning in the y direction
-          // A function that is called as the user is panning and returns the
-          // available directions can also be used:
-          //   mode: function({ chart }) {
-          //     return 'xy';
-          //   },
-          mode: 'xy',
-    
-          rangeMin: {
-            // Format of min pan range depends on scale type
-            x: null,
-            y: null
-          },
-          rangeMax: {
-            // Format of max pan range depends on scale type
-            x: null,
-            y: null
-          },
-    
-          // Function called while the user is panning
-          onPan: function({chart}) { console.log(`I'm panning!!!`); },
-          // Function called once panning is completed
-          onPanComplete: function({chart}) { console.log(`I was panned!!!`); }
-        },
-    
-        // Container for zoom options
-        zoom: {
-          // Boolean to enable zooming
-          enabled: true,
-    
-          // Enable drag-to-zoom behavior
-          drag: true,
-    
-          // Drag-to-zoom effect can be customized
-          // drag: {
-          // 	 borderColor: 'rgba(225,225,225,0.3)'
-          // 	 borderWidth: 5,
-          // 	 backgroundColor: 'rgb(225,225,225)',
-          // 	 animationDuration: 0
-          // },
-    
-          // Zooming directions. Remove the appropriate direction to disable
-          // Eg. 'y' would only allow zooming in the y direction
-          // A function that is called as the user is zooming and returns the
-          // available directions can also be used:
-          //   mode: function({ chart }) {
-          //     return 'xy';
-          //   },
-          mode: 'xy',
-    
-          rangeMin: {
-            // Format of min zoom range depends on scale type
-            x: null,
-            y: null
-          },
-          rangeMax: {
-            // Format of max zoom range depends on scale type
-            x: null,
-            y: null
-          },
-    
-          // Speed of zoom via mouse wheel
-          // (percentage of zoom on a wheel event)
-          speed: 0.1,
-    
-          // Function called while the user is zooming
-          onZoom: function({chart}) { console.log(`I'm zooming!!!`); },
-          // Function called once zooming is completed
-          onZoomComplete: function({chart}) { console.log(`I was zoomed!!!`); }
-        }
-      }
-    },
     scales: {
       xAxes: [{
         ticks: {
@@ -194,10 +99,14 @@ export class GeneChartComponent implements OnInit {
     legend: {
       display: false
     },
+
   };
 
   public bubbleChartType: ChartType = 'bubble';
-  public bubblesTooltip: ChartTooltipOptions;
+  public bubblesTooltip: ChartTooltipOptions ={
+    intersect: true,
+
+    }
   bubbleDefaultRadius: number = 5;
 
   public bubbleChartData: ChartDataSets[] = [
@@ -208,8 +117,7 @@ export class GeneChartComponent implements OnInit {
     },
   ];
 
-  ngOnDestroy(){
-  }
+  ngOnDestroy(){}
 
 
 }

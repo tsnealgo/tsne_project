@@ -1,7 +1,7 @@
-:host {
+/* :host {
     padding: 0;
     margin: 0;
-}
+} */
 .container {
     display: grid;
     grid-template-columns: auto;
@@ -9,6 +9,7 @@
     grid-template-areas: "menu" "chart";
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .menu {
