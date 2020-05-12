@@ -7,11 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  selectedGene: string;
+  selectedGene: string = "none";
 
-  constructor(private data: DataService) { }
+  constructor() { }
   
   ngOnInit() {
-   //  this.data.currentSelectedGene.subscribe(selectedGene => this.selectedGene = selectedGene)
   }
 }

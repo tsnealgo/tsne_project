@@ -1,0 +1,10 @@
+<div class="chart-wrapper" *ngIf = "bubbleChartData">
+    <canvas baseChart
+    [datasets]="bubbleChartData"
+    [options]="bubbleChartOptions"
+    [chartType]="bubbleChartType">
+  </canvas>
+</div>
+
+
+

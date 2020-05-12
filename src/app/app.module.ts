@@ -7,8 +7,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GeneMenuComponent } from './menu/components/gene-menu/gene-menu.component';
 import { GeneChartComponent } from './chart/gene-chart/gene-chart.component';
 import { ChartsModule } from 'ng2-charts';
-import { ApexChartComponent } from './apex-chart/apex-chart.component';
 import { NgApexchartsModule } from "ng-apexcharts";
+import { ColumnDistributedChartComponent } from './column-distributed-chart/column-distributed-chart.component';
+import { GroupsChartComponent } from './groups-chart/groups-chart.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,8 @@ import { NgApexchartsModule } from "ng-apexcharts";
     GeneSelectComponent,
     GeneMenuComponent,
     GeneChartComponent,
-    ApexChartComponent,
-
-
-    
+    ColumnDistributedChartComponent,
+    GroupsChartComponent,    
   ],
   imports: [
     BrowserModule,

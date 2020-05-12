@@ -1,82 +1,33 @@
-import { DataService } from './../../data-service.service';
-import { Cell } from './cell.module';
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { ChartOptions, ChartType, ChartDataSets, ChartTooltipOptions, ChartData } from 'chart.js';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import * as tSNE from '../../../assets/tSNE.json';
 import * as Genes from '../../../assets/2KGenes.json';
-
 @Component({
   selector: 'app-gene-chart',
   templateUrl: './gene-chart.component.html',
   styleUrls: ['./gene-chart.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class GeneChartComponent implements OnInit {
 
   tSNE_data = tSNE.results;
   genesVScells: any = (Genes as any).default.results;
-
-  cells = [];
-  dynamic_cells = [];
-  selectedGene: string = "none";s
-  geneCells: any;
+  @Input() selectedGene: string;
   
 
-  chart = null;
+  constructor(){}
 
-  constructor(private data: DataService, private ref: ChangeDetectorRef){}
+    ngOnChanges(changes: SimpleChanges){
+      this.bubbleChartData[0].data = this.generateDataByGene("Six2_neg");
+      this.bubbleChartData[1].data = this.generateDataByGene("Six2_pos");  
+  }
 
   ngOnInit(): void {
-    console.log("XXX",  this.genesVScells);
-    this.Initializing_tSNE();
-    this.updateData(this.cells);
-
-    //change in selectedGene
-     this.data.currentSelectedGene.subscribe(selectedGene => {
-        this.selectedGene = selectedGene;  
-        //return this.cells to the origin value
-        this.Initializing_tSNE();
-        //if the user chose a gene
-      if(this.selectedGene !== "none") {
-        this.dynamic_cells = this.cells;
-        this.geneCells = this.findGene(this.selectedGene);
-        this.dynamic_cells.forEach(cell => {
-          if(this.geneCells[0].hasOwnProperty(cell.cellName)){
-            cell.r = Number(this.geneCells[0][cell.cellName]);
-          }
-        });
-        this.bubbleChartData[0].backgroundColor = '#306262';
-        this.updateData(this.dynamic_cells);
-      } 
-      else {
-        this.updateData(this.cells);
-        this.bubbleChartData[0].backgroundColor = '#306262';
-      }  
-      this.ref.markForCheck();
-     });
-      
   }
+
   /*search the selected gene from the original table*/
   public findGene(geneName: string){
     return this.genesVScells.filter(element => element.gene === geneName);
-  }
-  /*update the data var in ChartDataSets */
-  public updateData(new_data: Cell[]){
-    this.bubbleChartData[0].data = new_data;
-  }
-  
-  // initialize cells from tSNE JSON
-  public Initializing_tSNE(){
-    this.cells = [];
-    for(let i = 0; i < this.tSNE_data.length; i++) {
-      let cell = new Cell();
-      cell.x = Number(this.tSNE_data[i].tSNE_X);
-      cell.y = Number(this.tSNE_data[i].tSNE_Y);
-      cell.r = this.bubbleDefaultRadius;
-      cell.cellName = this.tSNE_data[i].Cell_name;
-      cell.FACS_gate = this.tSNE_data[i].FACS_gate;
-      this.cells.push(cell);
-    }
   }
   
   public bubbleChartOptions: ChartOptions = {
@@ -97,27 +48,81 @@ export class GeneChartComponent implements OnInit {
       }]
     },
     legend: {
-      display: false
+      display: true,
     },
 
+    // tooltips: {
+    //   enabled: true,
+    //   mode: 'point',
+    // callbacks: {
+    //   title: function (tooltipItem, data){
+    //     return "Info:";
+    //   },
+    //   label: function (tooltipItem, data){
+    //     let family = data.datasets[tooltipItem.datasetIndex].label || '';
+    //     return family;
+    //   }
+    // }
+    // }
   };
 
   public bubbleChartType: ChartType = 'bubble';
-  public bubblesTooltip: ChartTooltipOptions ={
-    intersect: true,
-
-    }
-  bubbleDefaultRadius: number = 5;
 
   public bubbleChartData: ChartDataSets[] = [
     {
-      backgroundColor: '#306262',
+      backgroundColor: '#9aa0a5',
       borderColor: 'black',
       borderWidth: 0.4,
+      label: 'Six2_neg',
+      data: this.generateData("Six2_neg")
+    },
+    {
+      backgroundColor: '#8ecfe5',
+      borderColor: 'black',
+      borderWidth: 0.4,
+      label: 'Six2_pos',
+      data: this.generateData("Six2_pos")
     },
   ];
 
   ngOnDestroy(){}
 
+  public generateData(FACS_gate: string) {
+    let data = [];
+    let x, y, r, name, family;
+    for(let i = 1; i < this.tSNE_data.length; i++) {
+      if (FACS_gate == this.tSNE_data[i].FACS_gate){
+        x = Number(this.tSNE_data[i].tSNE_X);
+        y = Math.floor(Number(this.tSNE_data[i].tSNE_Y));
+        r = 7;  
+        name = this.tSNE_data[i].Cell_name;
+        family = this.tSNE_data[i].FACS_gate;
+        data.push({x, y, r, name, family}); 
+      }   
+    }
+    return data;
+  }
 
+  public generateDataByGene(FACS_gate: string) {
+    let data = [];
+    let geneCells = [];
+    let x, y, r, name, family;
+    for(let i = 1; i < this.tSNE_data.length; i++) {
+      if (FACS_gate == this.tSNE_data[i].FACS_gate){
+        x = Number(this.tSNE_data[i].tSNE_X);
+        y = Math.floor(Number(this.tSNE_data[i].tSNE_Y));
+        if(this.selectedGene == "none")
+          r = 7;  
+        else {
+          geneCells = this.findGene(this.selectedGene);
+          let geneName = Object.keys(geneCells[0])[i];
+          r = geneCells[0][geneName];
+        }  
+        name = this.tSNE_data[i].Cell_name;
+        family = this.tSNE_data[i].FACS_gate;          
+        data.push({x, y, r, name, family}); 
+      }   
+    }
+    return data;
+  }
 }

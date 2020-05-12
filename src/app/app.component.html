@@ -1,11 +1,23 @@
-<div class="container">
-    <div class = "menu">
-        <app-gene-menu></app-gene-menu>
+    <div class="selection">
+        <br>
+        <app-gene-select (selectionEvent) = "selectedGene=$event"></app-gene-select>
+        <br>
     </div>
-    <div class = "chart">
-        <app-gene-chart></app-gene-chart>
-        <app-apex-chart></app-apex-chart>
+    <hr>
+    <div class = "tSNE_chart">
+        <app-gene-chart [selectedGene] = "selectedGene"></app-gene-chart>
     </div>
-</div>
+    <hr>
+    <br>
+    <div class = "tSNE_chart">
+        <app-groups-chart [selectedGene] = "selectedGene"></app-groups-chart>
+    </div>
+   <hr>
+   <br>
+   <div class = "tSNE_chart">
+        <app-column-distributed-chart [selectedGene] = "selectedGene"></app-column-distributed-chart>
+   </div>
+
+
 
 
