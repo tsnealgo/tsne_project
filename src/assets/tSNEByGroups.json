@@ -1,534 +1,6 @@
 {
     "results": [
         {
-            "Cell_name": "Plate9_Six2_neg_E1_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "22.9416705",
-            "tSNE_Y": "-10.86276581"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E10_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "42.0926973",
-            "tSNE_Y": "33.5652915"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E11_count",
-            "FACS_gate": "MACROPHAG",
-            "tSNE_X": "-35.34567583",
-            "tSNE_Y": "1.162590593"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E12_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-8.146802507",
-            "tSNE_Y": "-49.02894667"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E13_count",
-            "FACS_gate": "PODO",
-            "tSNE_X": "-14.7901355",
-            "tSNE_Y": "-18.78403848"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E14_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "45.70791823",
-            "tSNE_Y": "38.21018584"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E15_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-1.062608357",
-            "tSNE_Y": "-49.21573123"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E16_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "9.443788508",
-            "tSNE_Y": "-16.9687416"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E17_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "23.55319579",
-            "tSNE_Y": "-23.02911809"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E18_count",
-            "FACS_gate": "ENDO",
-            "tSNE_X": "-42.37911227",
-            "tSNE_Y": "22.28539024"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E19_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "48.12775073",
-            "tSNE_Y": "33.3803471"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E2_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-8.801119786",
-            "tSNE_Y": "-45.86754015"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E20_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "45.81020199",
-            "tSNE_Y": "35.48853395"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E21_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "44.3361638",
-            "tSNE_Y": "36.71129875"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E22_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "0.510369749",
-            "tSNE_Y": "-48.92746173"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E24_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "40.01328926",
-            "tSNE_Y": "32.00879696"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E3_count",
-            "FACS_gate": "PODO",
-            "tSNE_X": "-13.46858131",
-            "tSNE_Y": "-18.43005006"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E4_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "0.038229551",
-            "tSNE_Y": "-36.46802316"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E5_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "3.296841023",
-            "tSNE_Y": "-45.60180449"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E6_count",
-            "FACS_gate": "MACROPHAG",
-            "tSNE_X": "-34.71643673",
-            "tSNE_Y": "0.821897732"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E7_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "6.959673997",
-            "tSNE_Y": "-13.76466942"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_E8_count",
-            "FACS_gate": "LOH",
-            "tSNE_X": "3.86607789",
-            "tSNE_Y": "-32.58519996"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F10_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-8.434778899",
-            "tSNE_Y": "-46.61712992"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F11_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "43.76794704",
-            "tSNE_Y": "30.53349587"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F13_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "12.23599168",
-            "tSNE_Y": "-17.81817277"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F14_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "46.24143509",
-            "tSNE_Y": "37.44917577"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F15_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "23.33432305",
-            "tSNE_Y": "-20.19981464"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F16_count",
-            "FACS_gate": "ENDO",
-            "tSNE_X": "-41.31474304",
-            "tSNE_Y": "21.25955364"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F17_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-4.779858183",
-            "tSNE_Y": "-49.05273551"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F18_count",
-            "FACS_gate": "PODO",
-            "tSNE_X": "-15.68854357",
-            "tSNE_Y": "-19.01950536"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F19_count",
-            "FACS_gate": "PODO",
-            "tSNE_X": "-14.17673684",
-            "tSNE_Y": "-17.69953154"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F2_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "45.62663191",
-            "tSNE_Y": "31.05240441"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F20_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "4.683294151",
-            "tSNE_Y": "-11.22100756"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F21_count",
-            "FACS_gate": "MACROPHAG",
-            "tSNE_X": "-37.2557555",
-            "tSNE_Y": "3.733416517"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F22_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "1.159071879",
-            "tSNE_Y": "-46.59204604"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F23_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-3.395543788",
-            "tSNE_Y": "-50.88031676"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F24_count",
-            "FACS_gate": "MACROPHAG",
-            "tSNE_X": "-36.87489674",
-            "tSNE_Y": "3.412336932"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F3_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "39.52907349",
-            "tSNE_Y": "33.93382837"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F4_count",
-            "FACS_gate": "PODO",
-            "tSNE_X": "-11.85664632",
-            "tSNE_Y": "-16.90033392"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F5_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-1.955838413",
-            "tSNE_Y": "-47.29824078"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F6_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-1.84303669",
-            "tSNE_Y": "-49.86360337"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F7_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-7.753977102",
-            "tSNE_Y": "-44.78956395"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F8_count",
-            "FACS_gate": "LOH",
-            "tSNE_X": "7.230155665",
-            "tSNE_Y": "-24.944709"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_F9_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "18.61742969",
-            "tSNE_Y": "-22.04824575"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G1_count",
-            "FACS_gate": "LOH",
-            "tSNE_X": "2.086626942",
-            "tSNE_Y": "-30.75174012"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G10_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "46.08764661",
-            "tSNE_Y": "31.35078673"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G11_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "47.80668822",
-            "tSNE_Y": "33.06937677"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G12_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "48.812985",
-            "tSNE_Y": "33.24801029"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G13_count",
-            "FACS_gate": "LOH",
-            "tSNE_X": "7.166798099",
-            "tSNE_Y": "-25.74562331"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G14_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "47.36045082",
-            "tSNE_Y": "34.10766056"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G15_count",
-            "FACS_gate": "MACROPHAG",
-            "tSNE_X": "-34.22660225",
-            "tSNE_Y": "1.097045783"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G16_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "40.78758347",
-            "tSNE_Y": "34.75397679"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G17_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "10.62664494",
-            "tSNE_Y": "-14.88958677"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G18_count",
-            "FACS_gate": "ENDO",
-            "tSNE_X": "-41.36476385",
-            "tSNE_Y": "21.71347289"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G19_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-9.011419413",
-            "tSNE_Y": "-50.22859494"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G2_count",
-            "FACS_gate": "ENDO",
-            "tSNE_X": "-42.18898011",
-            "tSNE_Y": "20.74776261"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G20_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "13.00909944",
-            "tSNE_Y": "-18.4314066"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G21_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-4.023360398",
-            "tSNE_Y": "-47.17046684"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G22_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-7.878746213",
-            "tSNE_Y": "-49.72052566"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G23_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "21.8397001",
-            "tSNE_Y": "-22.34785789"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G24_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-9.658321269",
-            "tSNE_Y": "-47.02700287"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G3_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "22.33123558",
-            "tSNE_Y": "-20.55323272"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G4_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "41.44806049",
-            "tSNE_Y": "33.46939633"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G5_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "22.88897852",
-            "tSNE_Y": "-10.93511375"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G7_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "10.26781068",
-            "tSNE_Y": "-16.78637046"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G8_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-1.778881597",
-            "tSNE_Y": "-51.08971652"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_G9_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "4.810766175",
-            "tSNE_Y": "-14.70194866"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H1_count",
-            "FACS_gate": "CM_ALL",
-            "tSNE_X": "-16.789178",
-            "tSNE_Y": "26.9360133"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H11_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "39.16889813",
-            "tSNE_Y": "31.8905317"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H12_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "22.01337222",
-            "tSNE_Y": "-18.79040687"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H13_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "46.44267541",
-            "tSNE_Y": "33.40421407"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H15_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "21.29565838",
-            "tSNE_Y": "-21.55520741"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H16_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "47.66905658",
-            "tSNE_Y": "34.9046304"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H17_count",
-            "FACS_gate": "LOH",
-            "tSNE_X": "3.055741417",
-            "tSNE_Y": "-32.04010151"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H18_count",
-            "FACS_gate": "PROX_1",
-            "tSNE_X": "15.21705997",
-            "tSNE_Y": "-20.76540659"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H19_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "-6.081481451",
-            "tSNE_Y": "-47.46749617"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H2_count",
-            "FACS_gate": "MACROPHAG",
-            "tSNE_X": "-37.60439889",
-            "tSNE_Y": "4.329807307"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H20_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "19.41787674",
-            "tSNE_Y": "-21.55308637"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H21_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "42.02360325",
-            "tSNE_Y": "32.26798592"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H23_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "22.49859946",
-            "tSNE_Y": "-12.01984554"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H24_count",
-            "FACS_gate": "DIST_CD",
-            "tSNE_X": "3.41544731",
-            "tSNE_Y": "-40.88931472"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H3_count",
-            "FACS_gate": "LOH",
-            "tSNE_X": "2.208263042",
-            "tSNE_Y": "-30.06071794"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H4_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "42.93189032",
-            "tSNE_Y": "37.99838327"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H5_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "44.64979518",
-            "tSNE_Y": "29.40141833"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H6_count",
-            "FACS_gate": "UM",
-            "tSNE_X": "41.18242893",
-            "tSNE_Y": "32.73104018"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H7_count",
-            "FACS_gate": "LOH",
-            "tSNE_X": "3.31430349",
-            "tSNE_Y": "-26.94010088"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H8_count",
-            "FACS_gate": "MACROPHAG",
-            "tSNE_X": "-35.99205508",
-            "tSNE_Y": "1.682919385"
-        },
-        {
-            "Cell_name": "Plate9_Six2_neg_H9_count",
-            "FACS_gate": "PROX_2",
-            "tSNE_X": "20.20807162",
-            "tSNE_Y": "-21.10041113"
-        },
-        {
             "Cell_name": "Plate10_Six2_neg_I1_count",
             "FACS_gate": "CM_ALL",
             "tSNE_X": "-20.99952692",
@@ -3263,6 +2735,534 @@
             "FACS_gate": "CM_DIV",
             "tSNE_X": "10.06246542",
             "tSNE_Y": "5.058814969"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E1_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "22.9416705",
+            "tSNE_Y": "-10.86276581"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E10_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "42.0926973",
+            "tSNE_Y": "33.5652915"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E11_count",
+            "FACS_gate": "MACROPHAG",
+            "tSNE_X": "-35.34567583",
+            "tSNE_Y": "1.162590593"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E12_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-8.146802507",
+            "tSNE_Y": "-49.02894667"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E13_count",
+            "FACS_gate": "PODO",
+            "tSNE_X": "-14.7901355",
+            "tSNE_Y": "-18.78403848"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E14_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "45.70791823",
+            "tSNE_Y": "38.21018584"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E15_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-1.062608357",
+            "tSNE_Y": "-49.21573123"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E16_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "9.443788508",
+            "tSNE_Y": "-16.9687416"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E17_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "23.55319579",
+            "tSNE_Y": "-23.02911809"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E18_count",
+            "FACS_gate": "ENDO",
+            "tSNE_X": "-42.37911227",
+            "tSNE_Y": "22.28539024"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E19_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "48.12775073",
+            "tSNE_Y": "33.3803471"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E2_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-8.801119786",
+            "tSNE_Y": "-45.86754015"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E20_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "45.81020199",
+            "tSNE_Y": "35.48853395"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E21_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "44.3361638",
+            "tSNE_Y": "36.71129875"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E22_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "0.510369749",
+            "tSNE_Y": "-48.92746173"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E24_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "40.01328926",
+            "tSNE_Y": "32.00879696"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E3_count",
+            "FACS_gate": "PODO",
+            "tSNE_X": "-13.46858131",
+            "tSNE_Y": "-18.43005006"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E4_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "0.038229551",
+            "tSNE_Y": "-36.46802316"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E5_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "3.296841023",
+            "tSNE_Y": "-45.60180449"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E6_count",
+            "FACS_gate": "MACROPHAG",
+            "tSNE_X": "-34.71643673",
+            "tSNE_Y": "0.821897732"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E7_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "6.959673997",
+            "tSNE_Y": "-13.76466942"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_E8_count",
+            "FACS_gate": "LOH",
+            "tSNE_X": "3.86607789",
+            "tSNE_Y": "-32.58519996"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F10_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-8.434778899",
+            "tSNE_Y": "-46.61712992"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F11_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "43.76794704",
+            "tSNE_Y": "30.53349587"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F13_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "12.23599168",
+            "tSNE_Y": "-17.81817277"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F14_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "46.24143509",
+            "tSNE_Y": "37.44917577"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F15_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "23.33432305",
+            "tSNE_Y": "-20.19981464"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F16_count",
+            "FACS_gate": "ENDO",
+            "tSNE_X": "-41.31474304",
+            "tSNE_Y": "21.25955364"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F17_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-4.779858183",
+            "tSNE_Y": "-49.05273551"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F18_count",
+            "FACS_gate": "PODO",
+            "tSNE_X": "-15.68854357",
+            "tSNE_Y": "-19.01950536"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F19_count",
+            "FACS_gate": "PODO",
+            "tSNE_X": "-14.17673684",
+            "tSNE_Y": "-17.69953154"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F2_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "45.62663191",
+            "tSNE_Y": "31.05240441"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F20_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "4.683294151",
+            "tSNE_Y": "-11.22100756"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F21_count",
+            "FACS_gate": "MACROPHAG",
+            "tSNE_X": "-37.2557555",
+            "tSNE_Y": "3.733416517"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F22_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "1.159071879",
+            "tSNE_Y": "-46.59204604"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F23_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-3.395543788",
+            "tSNE_Y": "-50.88031676"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F24_count",
+            "FACS_gate": "MACROPHAG",
+            "tSNE_X": "-36.87489674",
+            "tSNE_Y": "3.412336932"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F3_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "39.52907349",
+            "tSNE_Y": "33.93382837"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F4_count",
+            "FACS_gate": "PODO",
+            "tSNE_X": "-11.85664632",
+            "tSNE_Y": "-16.90033392"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F5_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-1.955838413",
+            "tSNE_Y": "-47.29824078"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F6_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-1.84303669",
+            "tSNE_Y": "-49.86360337"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F7_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-7.753977102",
+            "tSNE_Y": "-44.78956395"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F8_count",
+            "FACS_gate": "LOH",
+            "tSNE_X": "7.230155665",
+            "tSNE_Y": "-24.944709"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_F9_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "18.61742969",
+            "tSNE_Y": "-22.04824575"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G1_count",
+            "FACS_gate": "LOH",
+            "tSNE_X": "2.086626942",
+            "tSNE_Y": "-30.75174012"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G10_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "46.08764661",
+            "tSNE_Y": "31.35078673"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G11_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "47.80668822",
+            "tSNE_Y": "33.06937677"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G12_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "48.812985",
+            "tSNE_Y": "33.24801029"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G13_count",
+            "FACS_gate": "LOH",
+            "tSNE_X": "7.166798099",
+            "tSNE_Y": "-25.74562331"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G14_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "47.36045082",
+            "tSNE_Y": "34.10766056"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G15_count",
+            "FACS_gate": "MACROPHAG",
+            "tSNE_X": "-34.22660225",
+            "tSNE_Y": "1.097045783"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G16_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "40.78758347",
+            "tSNE_Y": "34.75397679"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G17_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "10.62664494",
+            "tSNE_Y": "-14.88958677"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G18_count",
+            "FACS_gate": "ENDO",
+            "tSNE_X": "-41.36476385",
+            "tSNE_Y": "21.71347289"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G19_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-9.011419413",
+            "tSNE_Y": "-50.22859494"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G2_count",
+            "FACS_gate": "ENDO",
+            "tSNE_X": "-42.18898011",
+            "tSNE_Y": "20.74776261"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G20_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "13.00909944",
+            "tSNE_Y": "-18.4314066"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G21_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-4.023360398",
+            "tSNE_Y": "-47.17046684"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G22_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-7.878746213",
+            "tSNE_Y": "-49.72052566"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G23_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "21.8397001",
+            "tSNE_Y": "-22.34785789"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G24_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-9.658321269",
+            "tSNE_Y": "-47.02700287"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G3_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "22.33123558",
+            "tSNE_Y": "-20.55323272"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G4_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "41.44806049",
+            "tSNE_Y": "33.46939633"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G5_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "22.88897852",
+            "tSNE_Y": "-10.93511375"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G7_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "10.26781068",
+            "tSNE_Y": "-16.78637046"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G8_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-1.778881597",
+            "tSNE_Y": "-51.08971652"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_G9_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "4.810766175",
+            "tSNE_Y": "-14.70194866"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H1_count",
+            "FACS_gate": "CM_ALL",
+            "tSNE_X": "-16.789178",
+            "tSNE_Y": "26.9360133"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H11_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "39.16889813",
+            "tSNE_Y": "31.8905317"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H12_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "22.01337222",
+            "tSNE_Y": "-18.79040687"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H13_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "46.44267541",
+            "tSNE_Y": "33.40421407"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H15_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "21.29565838",
+            "tSNE_Y": "-21.55520741"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H16_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "47.66905658",
+            "tSNE_Y": "34.9046304"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H17_count",
+            "FACS_gate": "LOH",
+            "tSNE_X": "3.055741417",
+            "tSNE_Y": "-32.04010151"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H18_count",
+            "FACS_gate": "PROX_1",
+            "tSNE_X": "15.21705997",
+            "tSNE_Y": "-20.76540659"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H19_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "-6.081481451",
+            "tSNE_Y": "-47.46749617"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H2_count",
+            "FACS_gate": "MACROPHAG",
+            "tSNE_X": "-37.60439889",
+            "tSNE_Y": "4.329807307"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H20_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "19.41787674",
+            "tSNE_Y": "-21.55308637"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H21_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "42.02360325",
+            "tSNE_Y": "32.26798592"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H23_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "22.49859946",
+            "tSNE_Y": "-12.01984554"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H24_count",
+            "FACS_gate": "DIST_CD",
+            "tSNE_X": "3.41544731",
+            "tSNE_Y": "-40.88931472"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H3_count",
+            "FACS_gate": "LOH",
+            "tSNE_X": "2.208263042",
+            "tSNE_Y": "-30.06071794"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H4_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "42.93189032",
+            "tSNE_Y": "37.99838327"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H5_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "44.64979518",
+            "tSNE_Y": "29.40141833"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H6_count",
+            "FACS_gate": "UM",
+            "tSNE_X": "41.18242893",
+            "tSNE_Y": "32.73104018"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H7_count",
+            "FACS_gate": "LOH",
+            "tSNE_X": "3.31430349",
+            "tSNE_Y": "-26.94010088"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H8_count",
+            "FACS_gate": "MACROPHAG",
+            "tSNE_X": "-35.99205508",
+            "tSNE_Y": "1.682919385"
+        },
+        {
+            "Cell_name": "Plate9_Six2_neg_H9_count",
+            "FACS_gate": "PROX_2",
+            "tSNE_X": "20.20807162",
+            "tSNE_Y": "-21.10041113"
         }
     ]
 }
