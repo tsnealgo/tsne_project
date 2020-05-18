@@ -25,6 +25,7 @@ export class GeneChartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   /*search the selected gene from the original table*/
   public findGene(geneName: string){
     return this.genesVScells.filter(element => element.gene === geneName);
@@ -89,15 +90,13 @@ export class GeneChartComponent implements OnInit {
 
   public generateData(FACS_gate: string) {
     let data = [];
-    let x, y, r, name, family;
-    for(let i = 1; i < this.tSNE_data.length; i++) {
+    let x, y, r;
+    for(let i = 0; i < this.tSNE_data.length; i++) {
       if (FACS_gate == this.tSNE_data[i].FACS_gate){
         x = Number(this.tSNE_data[i].tSNE_X);
         y = Math.floor(Number(this.tSNE_data[i].tSNE_Y));
         r = 7;  
-        name = this.tSNE_data[i].Cell_name;
-        family = this.tSNE_data[i].FACS_gate;
-        data.push({x, y, r, name, family}); 
+        data.push({x, y, r}); 
       }   
     }
     return data;
@@ -106,21 +105,20 @@ export class GeneChartComponent implements OnInit {
   public generateDataByGene(FACS_gate: string) {
     let data = [];
     let geneCells = [];
-    let x, y, r, name, family;
-    for(let i = 1; i < this.tSNE_data.length; i++) {
+    let x, y, r, name;
+    for(let i = 0; i < this.tSNE_data.length; i++) {
       if (FACS_gate == this.tSNE_data[i].FACS_gate){
         x = Number(this.tSNE_data[i].tSNE_X);
         y = Math.floor(Number(this.tSNE_data[i].tSNE_Y));
+        name = this.tSNE_data[i].Cell_name;
         if(this.selectedGene == "none")
           r = 7;  
         else {
           geneCells = this.findGene(this.selectedGene);
-          let geneName = Object.keys(geneCells[0])[i];
-          r = geneCells[0][geneName];
-        }  
-        name = this.tSNE_data[i].Cell_name;
-        family = this.tSNE_data[i].FACS_gate;          
-        data.push({x, y, r, name, family}); 
+          let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
+          r = temp.value;
+        }            
+        data.push({x, y, r}); 
       }   
     }
     return data;
