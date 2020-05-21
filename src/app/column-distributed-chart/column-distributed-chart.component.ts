@@ -23,6 +23,7 @@ export class ColumnDistributedChartComponent implements OnInit {
   public barChartData = [
     {
       backgroundColor: '#234057',
+      hoverBackgroundColor:'#234057',
       borderColor: 'black',
       borderWidth: 0.4,
       label: '',
@@ -50,5 +51,11 @@ export class ColumnDistributedChartComponent implements OnInit {
     } else
       data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     return data;
+  }
+
+  downloadImage(event){
+    let anchor = event.target;
+    anchor.href = document.getElementsByTagName('canvas')[2].toDataURL();
+    anchor.download = `${this.selectedGene}_bar.png`;
   }
 }

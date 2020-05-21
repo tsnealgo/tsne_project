@@ -51,20 +51,11 @@ export class GeneChartComponent implements OnInit {
     legend: {
       display: true,
     },
-
-    // tooltips: {
-    //   enabled: true,
-    //   mode: 'point',
-    // callbacks: {
-    //   title: function (tooltipItem, data){
-    //     return "Info:";
-    //   },
-    //   label: function (tooltipItem, data){
-    //     let family = data.datasets[tooltipItem.datasetIndex].label || '';
-    //     return family;
-    //   }
-    // }
-    // }
+    elements: {
+      point: {
+        hoverRadius: 1,
+      }
+    }
   };
 
   public bubbleChartType: ChartType = 'bubble';
@@ -122,5 +113,11 @@ export class GeneChartComponent implements OnInit {
       }   
     }
     return data;
+  }
+
+  downloadImage(event){
+    let anchor = event.target;
+    anchor.href = document.getElementsByTagName('canvas')[0].toDataURL();
+    anchor.download = `${this.selectedGene}_families1.png`;
   }
 }

@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets, ChartTooltipOptions } from 'chart.js';
 import * as tSNE from '../../assets/tSNEByGroups.json';
@@ -56,6 +57,11 @@ export class GroupsChartComponent implements OnInit {
     legend: {
       display: true,
     },
+    elements: {
+      point: {
+        hoverRadius: 1,
+      }
+    }
 
   };
 
@@ -174,6 +180,12 @@ export class GroupsChartComponent implements OnInit {
       }   
     }
     return data;
+  }
+
+  downloadImage(event){
+    let anchor = event.target;
+    anchor.href = document.getElementsByTagName('canvas')[1].toDataURL();
+    anchor.download = `${this.selectedGene}_families2.png`;
   }
 
 }

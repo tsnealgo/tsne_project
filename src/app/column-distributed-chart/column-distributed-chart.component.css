@@ -3,3 +3,9 @@
     margin: 35px auto;
   }
   
+  a {
+    float: right;
+    color: black;
+    outline: none;
+    text-decoration: none !important;
+}
