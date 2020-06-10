@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import * as tSNE from '../../../assets/tSNE.json';
-import * as Genes from '../../../assets/2KGenes.json';
+import * as Genes from '../../../assets/AllGenes.json';
+
 @Component({
   selector: 'app-gene-chart',
   templateUrl: './gene-chart.component.html',
@@ -106,8 +107,12 @@ export class GeneChartComponent implements OnInit {
           r = 7;  
         else {
           geneCells = this.findGene(this.selectedGene);
-          let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
-          r = temp.value;
+          if(geneCells.length == 0)
+            r = 7;
+          else{
+            let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
+            r = temp.value;
+          }
         }            
         data.push({x, y, r}); 
       }   

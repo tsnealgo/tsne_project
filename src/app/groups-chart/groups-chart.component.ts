@@ -2,7 +2,7 @@ import { element } from 'protractor';
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets, ChartTooltipOptions } from 'chart.js';
 import * as tSNE from '../../assets/tSNEByGroups.json';
-import * as Genes from '../../assets/2KGenes.json';
+import * as Genes from '../../assets/AllGenes.json';
 @Component({
   selector: 'app-groups-chart',
   templateUrl: './groups-chart.component.html',
@@ -173,8 +173,12 @@ export class GroupsChartComponent implements OnInit {
           r = 7;  
         else {
           geneCells = this.findGene(this.selectedGene);
-          let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
-          r = temp.value;
+          if(geneCells.length == 0)
+            r = 7;
+          else{
+            let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
+            r = temp.value;
+          }
         }            
         data.push({x, y, r}); 
       }   

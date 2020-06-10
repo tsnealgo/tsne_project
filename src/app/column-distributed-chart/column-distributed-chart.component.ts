@@ -46,8 +46,13 @@ export class ColumnDistributedChartComponent implements OnInit {
 
     if(this.selectedGene != "none"){
       let output = this.findGene(this.selectedGene);
-      data = Object.values(output[0]);
-      data = data.slice(1, data.length);
+      console.log(output);
+      if(output.length == 0)
+      data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+      else{
+        data = Object.values(output[0]);
+        data = data.slice(1, data.length);
+      }
     } else
       data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     return data;
