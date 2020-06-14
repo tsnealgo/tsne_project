@@ -2,7 +2,9 @@ import { element } from 'protractor';
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets, ChartTooltipOptions } from 'chart.js';
 import * as tSNE from '../../assets/tSNEByGroups.json';
-import * as Genes from '../../assets/AllGenes.json';
+import { HttpClient } from '@angular/common/http';
+import convert_table from '../../assets/convert.json';
+
 @Component({
   selector: 'app-groups-chart',
   templateUrl: './groups-chart.component.html',
@@ -11,11 +13,11 @@ import * as Genes from '../../assets/AllGenes.json';
 export class GroupsChartComponent implements OnInit {
 
   tSNE_data = tSNE.results;
-  genesVScells: any = (Genes as any).default.results;
   @Input() selectedGene: string;
+  convert: any = convert_table.convert;
   
 
-  constructor(){}
+  constructor(private httpClient: HttpClient){}
 
     ngOnChanges(changes: SimpleChanges){
       this.bubbleChartData[0].data = this.generateDataByGene("UM"); 
@@ -32,10 +34,6 @@ export class GroupsChartComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  /*search the selected gene from the original table*/
-  public findGene(geneName: string){
-    return this.genesVScells.filter(element => element.gene === geneName);
-  }
   
   public bubbleChartOptions: ChartOptions = {
     responsive: true,
@@ -162,32 +160,29 @@ export class GroupsChartComponent implements OnInit {
 
   public generateDataByGene(FACS_gate: string) {
     let data = [];
-    let geneCells = [];
+    let gene;
     let x, y, r, name;
     if(this.selectedGene != "none"){
-      geneCells = this.findGene(this.selectedGene);
-      console.log("groups-chart", geneCells)
+      let index = this.convert.filter(element => element.gene == this.selectedGene)[0].index;
+      this.httpClient.get(`https://bioprojectbiuserver.firebaseio.com/genes/genes/${index}.json`).toPromise()
+      .then( result => {
+            gene = result;
+            for(let i = 0; i < this.tSNE_data.length; i++) {
+            if (FACS_gate == this.tSNE_data[i].FACS_gate){
+              x = Number(this.tSNE_data[i].tSNE_X);
+              y = Math.floor(Number(this.tSNE_data[i].tSNE_Y));
+              name = this.tSNE_data[i].Cell_name;
+              let temp = Object.getOwnPropertyDescriptor(gene, name);
+              r = temp.value;
+            }            
+            data.push({x, y, r}); 
+            }});
     }
-    for(let i = 0; i < this.tSNE_data.length; i++) {
-      if (FACS_gate == this.tSNE_data[i].FACS_gate){
-        x = Number(this.tSNE_data[i].tSNE_X);
-        y = Math.floor(Number(this.tSNE_data[i].tSNE_Y));
-        name = this.tSNE_data[i].Cell_name;
-        if(this.selectedGene == "none")
-          r = 7;  
-        else {
-          if(geneCells.length == 0)
-            r = 0;
-          else{
-            let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
-            r = temp.value;
-          }
-        }            
-        data.push({x, y, r}); 
-      }   
-    }
+    else
+      data = this.generateData(FACS_gate);
+  
     return data;
-  }
+    }
 
   downloadImage(event){
     let anchor = event.target;

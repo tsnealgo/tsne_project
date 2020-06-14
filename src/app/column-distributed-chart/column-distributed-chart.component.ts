@@ -46,7 +46,6 @@ export class ColumnDistributedChartComponent implements OnInit {
 
     if(this.selectedGene != "none"){
       let output = this.findGene(this.selectedGene);
-      console.log("column-dist-chart", output);
       if(output.length == 0)
         data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
       else{
