@@ -164,6 +164,10 @@ export class GroupsChartComponent implements OnInit {
     let data = [];
     let geneCells = [];
     let x, y, r, name;
+    if(this.selectedGene != "none"){
+      geneCells = this.findGene(this.selectedGene);
+      console.log("groups-chart", geneCells)
+    }
     for(let i = 0; i < this.tSNE_data.length; i++) {
       if (FACS_gate == this.tSNE_data[i].FACS_gate){
         x = Number(this.tSNE_data[i].tSNE_X);
@@ -172,9 +176,8 @@ export class GroupsChartComponent implements OnInit {
         if(this.selectedGene == "none")
           r = 7;  
         else {
-          geneCells = this.findGene(this.selectedGene);
           if(geneCells.length == 0)
-            r = 7;
+            r = 0;
           else{
             let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
             r = temp.value;

@@ -2,6 +2,7 @@ import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import * as tSNE from '../../../assets/tSNE.json';
 import * as Genes from '../../../assets/AllGenes.json';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-gene-chart',
@@ -16,14 +17,16 @@ export class GeneChartComponent implements OnInit {
   @Input() selectedGene: string;
   
 
-  constructor(){}
+  constructor(private htppClient: HttpClient){}
 
     ngOnChanges(changes: SimpleChanges){
       this.bubbleChartData[0].data = this.generateDataByGene("Six2_neg");
-      this.bubbleChartData[1].data = this.generateDataByGene("Six2_pos");  
+      this.bubbleChartData[1].data = this.generateDataByGene("Six2_pos"); 
   }
 
   ngOnInit(): void {
+    this.htppClient.get('https://bioprojectbiuserver.firebaseio.com/genes/').subscribe(
+        results => console.log(results));
   }
 
 
@@ -98,6 +101,10 @@ export class GeneChartComponent implements OnInit {
     let data = [];
     let geneCells = [];
     let x, y, r, name;
+    if(this.selectedGene != "none"){
+      geneCells = this.findGene(this.selectedGene);
+      console.log("gene-chart", geneCells);
+    }
     for(let i = 0; i < this.tSNE_data.length; i++) {
       if (FACS_gate == this.tSNE_data[i].FACS_gate){
         x = Number(this.tSNE_data[i].tSNE_X);
@@ -106,9 +113,8 @@ export class GeneChartComponent implements OnInit {
         if(this.selectedGene == "none")
           r = 7;  
         else {
-          geneCells = this.findGene(this.selectedGene);
           if(geneCells.length == 0)
-            r = 7;
+            r = 0;
           else{
             let temp = Object.getOwnPropertyDescriptor(geneCells[0], name);
             r = temp.value;
