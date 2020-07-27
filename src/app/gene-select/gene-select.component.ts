@@ -1,4 +1,3 @@
-import { DataService } from '../data-service.service';
 import { Component, OnInit, OnDestroy, Output, EventEmitter, Input } from '@angular/core';
 import {FormControl} from '@angular/forms';
 import { INgxSelectOption } from 'ngx-select-ex/ngx-select/ngx-select.interfaces';
